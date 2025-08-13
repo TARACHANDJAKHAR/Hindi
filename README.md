@@ -18,11 +18,14 @@ HindiCell-Website/
 ├── contact.html        # Contact details and form
 │
 ├── style.css           # Common stylesheet
+├── .gitignore          # Git ignore file
 │
-└── images/             # Logos, banners, and images
-    ├── govt-logo.png
-    ├── svnit-logo.png
-    └── others...
+├── images/             # Logos, banners, and images
+│   ├── README.md       # Image requirements and specifications
+│   └── favicon.ico     # Website favicon (placeholder)
+│
+└── downloads/          # Downloadable documents
+    └── README.md       # Document requirements and specifications
 ```
 
 ---
@@ -62,16 +65,29 @@ HindiCell-Website/
 
 All pages share the same `style.css` file for consistent look and feel:
 - Responsive header with Government of India and SVNIT logos
-- Top navigation bar with hover effects
-- Footer with copyright
+- Top navigation bar with hover effects and active state styling
+- Animated news ticker with scrolling text
+- Footer with copyright information
+- Mobile-responsive design
 
 ---
 
-## 📌 Notes
+## 📌 Current Status
 
-- Update the `images/` folder with real logos and banners.
-- Replace placeholder links in `resources.html` with working URLs.
-- Form in `contact.html` currently uses HTML only — backend integration is needed for live submissions.
+✅ **Completed:**
+- HTML structure for all pages
+- CSS styling with responsive design
+- Navigation with active state indicators
+- News ticker with scrolling animation
+- Lightbox functionality for event gallery
+- Meta descriptions and SEO improvements
+- Directory structure for images and downloads
+
+⚠️ **Next Steps:**
+- Add actual images to the `images/` folder
+- Add PDF documents to the `downloads/` folder
+- Replace placeholder favicon with actual icon
+- Consider adding a contact form backend
 
 ---
 

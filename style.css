@@ -47,6 +47,9 @@ nav a {
 nav a:hover {
     background: #0f6600;
 }
+nav a.active {
+    background: #0f6600;
+}
 
 /* HERO SECTION */
 .hero {
@@ -70,27 +73,39 @@ nav a:hover {
     padding: 5px;
     font-weight: bold;
 }
+.news-ticker .scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    animation: ticker 18s linear infinite;
+}
+@keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
 
 /* HIGHLIGHT SECTION */
 .highlight {
     padding: 20px;
     text-align: center;
 }
+
+/* Event Cards - Consolidated */
 .event-card {
     display: flex;
-    max-width: 800px;
-    margin: auto;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
+    background: white;
+    max-width: 800px;
+    margin: auto;
 }
 .event-card img {
-    width: 300px;
+    width: 250px;
     height: auto;
 }
 .event-card div {
-    padding: 20px;
-    text-align: left;
+    padding: 15px;
 }
 .btn {
     display: inline-block;
@@ -113,15 +128,6 @@ footer {
     margin-top: 20px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .event-card {
-        flex-direction: column;
-    }
-    .event-card img {
-        width: 100%;
-    }
-}
 /* Content Section */
 .content {
     padding: 20px;
@@ -156,25 +162,12 @@ footer {
 .member h3 {
     margin: 10px 0 5px;
 }
-/* Event Cards */
+
+/* Events List */
 .events-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-.event-card {
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    background: white;
-}
-.event-card img {
-    width: 250px;
-    height: auto;
-}
-.event-card div {
-    padding: 15px;
 }
 
 /* Gallery */
@@ -211,15 +204,6 @@ footer {
     max-height: 90%;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .event-card {
-        flex-direction: column;
-    }
-    .event-card img {
-        width: 100%;
-    }
-}
 /* Achievements */
 .achievements-list {
     display: flex;
@@ -250,6 +234,7 @@ footer {
 .report-list a:hover {
     text-decoration: underline;
 }
+
 /* Contact Page */
 .contact-container {
     display: flex;
@@ -288,8 +273,14 @@ footer {
     margin: 20px 0;
 }
 
-/* Responsive */
+/* Responsive Design - Consolidated */
 @media (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+    }
+    .event-card img {
+        width: 100%;
+    }
     .contact-container {
         flex-direction: column;
     }
