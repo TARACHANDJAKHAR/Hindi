@@ -2,15 +2,29 @@
 .DS_Store
 Thumbs.db
 
-# Node modules
+# Node.js dependencies (if ever used)
 node_modules/
 
 # Logs
-*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# VS Code settings
+# Editor folders and settings
 .vscode/
+.idea/
+
+# Build output (if you use any build tools later)
+dist/
+build/
 
 # Temporary files
 *.tmp
 *.temp
+*.swp
+
+# macOS metadata
+._*
+
+# SASS cache
+.sass-cache/
