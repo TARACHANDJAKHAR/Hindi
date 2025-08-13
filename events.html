@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Hindi Cell SVNIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-top">
+            <img src="images/svnit-logo.png" alt="SVNIT Logo" class="logo">
+            <div class="title">
+                <h1>राजभाषा प्रकोष्ठ</h1>
+                <h2>Hindi Cell - SVNIT</h2>
+            </div>
+            <img src="images/india-emblem.png" alt="India Emblem" class="logo">
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="resources.html">Resources</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- UPCOMING EVENTS -->
+    <section class="content">
+        <h1>Upcoming Events</h1>
+        <div class="events-list">
+            <div class="event-card">
+                <img src="images/kavi-sammelan.jpg" alt="Kavi Sammelan">
+                <div>
+                    <h3>Kavi Sammelan 2025</h3>
+                    <p><strong>Date:</strong> 15 September 2025</p>
+                    <p><strong>Venue:</strong> Main Auditorium, SVNIT</p>
+                    <p>Evening filled with poetry, humor, and Hindi literature enthusiasts from across India.</p>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="images/hindi-workshop.jpg" alt="Hindi Workshop">
+                <div>
+                    <h3>Hindi Workshop</h3>
+                    <p><strong>Date:</strong> 20 September 2025</p>
+                    <p><strong>Venue:</strong> Seminar Hall, Admin Building</p>
+                    <p>Training session on effective use of Hindi in official work and translation tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAST EVENTS -->
+    <section class="content">
+        <h1>Past Events Gallery</h1>
+        <div class="gallery">
+            <img src="images/past1.jpg" alt="Past Event 1" onclick="openLightbox(this)">
+            <img src="images/past2.jpg" alt="Past Event 2" onclick="openLightbox(this)">
+            <img src="images/past3.jpg" alt="Past Event 3" onclick="openLightbox(this)">
+            <img src="images/past4.jpg" alt="Past Event 4" onclick="openLightbox(this)">
+        </div>
+    </section>
+
+    <!-- LIGHTBOX VIEW -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Full View">
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Hindi Cell, SVNIT | Powered by Government of India</p>
+        <p><i class="fas fa-envelope"></i> hindi.cell@svnit.ac.in | <i class="fas fa-phone"></i> +91-12345-67890</p>
+    </footer>
+
+    <!-- LIGHTBOX SCRIPT -->
+    <script>
+        function openLightbox(img) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
+
