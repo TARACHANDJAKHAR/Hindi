@@ -34,7 +34,7 @@ HindiCell-Website/
 
 1. Clone or download this repository:
 
-   git clone https://github.com/your-username/HindiCell-Website.git
+   git clone https://github.com/TARACHANDJAKHAR/Hindi.git
    
 2. Open the project folder:
 
