@@ -67,8 +67,18 @@ All pages share the same `style.css` file for consistent look and feel:
 - Responsive header with Government of India and SVNIT logos
 - Top navigation bar with hover effects and active state styling
 - Animated news ticker with scrolling text
+- **Dark/Light theme toggle with system preference detection**
+- Smooth transitions and animations for theme switching
 - Footer with copyright information
 - Mobile-responsive design
+
+### 🌙 Dark Theme Features
+- **Automatic Detection**: Detects user's system theme preference
+- **Manual Toggle**: Beautiful toggle button in the header (🌙/☀️)
+- **Persistent**: Remembers user's choice across sessions
+- **Smooth Transitions**: Elegant animations when switching themes
+- **Enhanced Contrast**: Optimized colors for both light and dark modes
+- **System Sync**: Automatically follows system theme changes (if no manual preference set)
 
 ---
 
@@ -82,12 +92,44 @@ All pages share the same `style.css` file for consistent look and feel:
 - Lightbox functionality for event gallery
 - Meta descriptions and SEO improvements
 - Directory structure for images and downloads
+- **Dark/Light theme toggle system**
+- **System theme preference detection**
+- **Smooth theme transitions and animations**
 
 ⚠️ **Next Steps:**
 - Add actual images to the `images/` folder
 - Add PDF documents to the `downloads/` folder
 - Replace placeholder favicon with actual icon
 - Consider adding a contact form backend
+
+---
+
+## 🚀 Advanced Features
+
+### Theme System
+The website now includes a sophisticated theme management system:
+- **`theme.js`**: Centralized theme management class
+- **CSS Variables**: Dynamic theming using CSS custom properties
+- **Local Storage**: Persistent theme preferences
+- **Media Queries**: System theme detection
+- **Event System**: Custom events for theme changes
+
+### Usage
+```javascript
+// Access theme manager instance
+const themeManager = window.themeManager;
+
+// Get current theme
+const currentTheme = themeManager.getCurrentTheme();
+
+// Set theme programmatically
+themeManager.setTheme('dark');
+
+// Listen for theme changes
+window.addEventListener('themeChanged', (e) => {
+    console.log('Theme changed to:', e.detail.theme);
+});
+```
 
 ---
 
